@@ -37,17 +37,6 @@ export default function GamePage() {
     const {state} = useLocation();
     
     console.log(state)
-    // useEffect(() => {
-    //     // Здесь вы можете загрузить данные игры с сервера
-    //     fetch(`http://localhost:5000/game/${id}`)
-    //         .then(response => response.json())
-    //         .then(data => setGame(data))
-    //         .then(response=> console.log(response));
-    // }, [id]);
-
-    // if (!game) {
-    //     return <div>Loading...</div>;
-    // }
 
     return (
         
