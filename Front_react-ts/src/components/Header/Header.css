@@ -1,0 +1,49 @@
+header {
+    background: var(--background-elem-color);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    user-select: none;
+    margin-bottom: 25px;
+}
+.logo embed{
+    fill: #111111; transition: .3s; 
+    max-width: 3vw;
+    min-width: 50px;
+    margin-left: 20px;
+    
+    
+}
+
+.logo {
+    font-size: 100px;
+}
+.logo:hover {
+    color: green;
+    
+}
+
+nav {
+    display: flex;
+    margin-right: 20px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.auth-profile a {
+    color: #ddd;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #555, #444);
+    transition: background 0.3s ease;
+}
+.auth-profile a:hover {
+    background: linear-gradient(to right, #666, #555);
+}

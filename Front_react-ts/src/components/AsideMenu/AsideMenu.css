@@ -1,0 +1,12 @@
+.right-aside {
+    width: 29vw;
+    border-radius: 18px;
+    
+    margin-right: 10px;
+    height: 85vh;
+    background-color: var(--background-elem-color);
+    border: var(--border-color) solid 2px;
+}
+aside {
+    margin-left: 26px;
+}

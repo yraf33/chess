@@ -1,0 +1,32 @@
+{
+    "active-games": [
+        {
+            "userId": "bf278364-79fb-4e3b-878a-f2087dedf91b",
+            "gameTime": "5",
+            "timeForMove": "3",
+            "gameId": "14f6cf7c-5fae-4f06-8657-dce2d7663f85",
+            "color": "random"
+        },
+        {
+            "userId": "2af28032-c234-45a2-bd79-cda0b45e7cdb",
+            "gameTime": "15",
+            "timeForMove": "3",
+            "gameId": "6e0f1c6b-b039-4d82-8e42-8bd7825e40ea",
+            "color": "random"
+        },
+        {
+            "userId": "218cfe3e-04ef-4bef-9d42-3642fca286c3",
+            "gameTime": "10",
+            "timeForMove": "5",
+            "gameId": "5fe6d0b4-4a13-4f30-9237-af77d1a52538",
+            "color": "random"
+        },
+        {
+            "userId": "c30e1747-e5a6-4f88-aafd-abd27d7760c7",
+            "gameTime": "180",
+            "timeForMove": "0",
+            "gameId": "d388916c-8591-4c8f-914e-c0f74b5a6dfd",
+            "color": "random"
+        }
+    ]
+}

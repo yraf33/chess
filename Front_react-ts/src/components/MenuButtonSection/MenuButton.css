@@ -1,0 +1,26 @@
+
+#select-game-menu button {
+    padding: 10px 20px;
+    min-width: 189px;
+    border-radius: 18px;
+    margin-bottom: 20px; 
+    border: 2px solid var(--border-color);
+    background-color: var(--background-elem-color);
+    color: #ddd;
+    cursor: pointer;
+    
+    text-decoration: none;
+    font-size: 21px;
+  
+  }
+  
+  #select-game-menu {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 18px;
+    width: 100%;
+  }
+  
+ 
+

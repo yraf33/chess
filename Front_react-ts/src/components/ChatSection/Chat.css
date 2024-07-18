@@ -1,0 +1,11 @@
+.chat-section {
+    width: 67vw;
+        height:400px;
+    position: relative;
+    bottom: 0;
+    background-color: var(--background-elem-color);
+    border: var(--border-color) solid 2px;
+    border-radius: 18px;
+    margin-left: 26px;
+    /* margin-right: 18px; */
+}

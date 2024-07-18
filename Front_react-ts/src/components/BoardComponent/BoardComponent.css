@@ -1,0 +1,95 @@
+.app {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+}
+
+.board {
+    width: calc(64px *8);
+    height: calc(64px *8);
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border-color);
+    
+}
+.board-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    
+}
+.coord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.vert-coord {
+    border: 1px solid var(--border-color);
+    background-color: var(--background-elem-color);
+    border-radius: 0 18px 18px 0px;
+}
+.vert-coord .coord {
+    
+    height: 64px;
+}
+.horz-coord {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-elem-color);
+    border: 1px solid var(--border-color);
+
+    border-radius: 0px 0px 18px 18px;
+}
+.horz-coord .coord {
+    height: 20px;
+    width: 64px;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell img {
+    height: 64px;
+    width: 64px;
+    pointer-events: none;
+}
+
+.cell.black {
+    background-color: #b58863;
+}
+
+.cell.white {
+    background-color: #f0d9b5;
+}
+
+.selected {
+    background-color: brown;
+}
+
+.available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}

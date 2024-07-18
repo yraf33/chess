@@ -1,0 +1,39 @@
+#menu-background{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 0px;
+    width: 100%;
+    background: var(--background-haky-color);
+    border-radius: 18px;
+    /* border: #3D3243 solid 2px; */
+    grid-gap: 18px;
+    /* padding: 10px 10px 10px; */
+  
+  }
+
+  #menu-background button{
+    color: #ddd;
+    /* font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center; */
+
+    padding: 10px 20px;
+    border-radius: 18px;
+    background: var(--background-elem-color);
+    border: var(--border-color) solid 2px;
+    transition: background 0.3s ease;
+    min-width: 189px;
+    min-height: 108px;
+    cursor: pointer;
+    font-size: 22px;
+    
+  }
+  
+#menu-background button:hover {
+    background: linear-gradient(to right, #666, #555);
+  }
+#menu-background button:active {
+   background: linear-gradient(to right, #be7609, #633d05);;
+  }
