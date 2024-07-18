@@ -46,3 +46,21 @@ main {
 
   }
 
+  .game-search {
+    display: flex;
+    flex-direction: column;
+    width:44vw;
+    align-items: center;
+    
+  }
+  
+  
+  
+  
+  
+  #active-games-menu{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  
