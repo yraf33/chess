@@ -29,11 +29,18 @@
             "color": "random"
         },
         {
-            "userId": "c30e1747-e5a6-4f88-aafd-abd27d7760c7",
-            "gameTime": "3/4",
+            "userId": "c76eda81-45dc-488d-b2d5-d142ea718009",
+            "gameTime": "5",
             "timeForMove": "0",
-            "gameId": "cfc54aa2-d945-408b-be40-cb649b116d24",
-            "color": "black"
+            "gameId": "cda7453e-abc8-4e35-b089-0fb7a721fbfc",
+            "color": "random"
+        },
+        {
+            "userId": "c30e1747-e5a6-4f88-aafd-abd27d7760c7",
+            "gameTime": "5",
+            "timeForMove": "0",
+            "gameId": "2e6203f3-4d2f-4b3d-ba52-f0eefc964cc8",
+            "color": "random"
         }
     ]
 }

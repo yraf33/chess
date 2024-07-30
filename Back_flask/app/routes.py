@@ -19,12 +19,12 @@ def get_active_games():
     
     return jsonify(active_games())
 
+
+rooms = list()
 @socketio.on('join')
 def on_join(data):
-    print('fdgfdgfdgfdgfdgfdg', data)
-    
-    
     join_room(data)
+    
     send({"message":"joined", 'gameId': data}, room=data)
 
 @socketio.on('leave')
