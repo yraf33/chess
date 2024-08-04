@@ -1,4 +1,5 @@
 import getOrCreateUserId from "./uid";
+import { socket } from "../../pages/MainMenuPage";
 
 
 export async function addGame(gameTiming, {setNewTab}, color ) {
@@ -22,8 +23,11 @@ export async function addGame(gameTiming, {setNewTab}, color ) {
             userId: userId
             }),
         });
+        
     if (response.ok) {
+        socket.emit('update-games')
         setNewTab('active-games');
+        
         }
 
 }

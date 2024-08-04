@@ -1,34 +1,29 @@
 from app import *
 
 
+
 @app.route("/")
 def index():
     return render_template('main_menu.html', title='ШААААААХМАТЫ')
 
-@app.route("/add_game", methods=['POST'])
-def add_game():
-    print(request.get_json())
-    request_data = request.get_json()
-    
-    add_game_to_file(request_data)
-    return jsonify({"message": "Game added successfully"})
 
 
-@app.route('/games', methods=['GET'])
-def get_active_games():
-    
-    return jsonify(active_games())
+
 
 
 rooms = list()
 @socketio.on('join')
 def on_join(data):
     join_room(data)
-    
-    send({"message":"joined", 'gameId': data}, room=data)
 
-@socketio.on('leave')
-def on_leave(data):
-    game_id = data['gameId']
-    leave_room(game_id)
-    send(f'User has left the room {game_id}', room=game_id)
+
+@socketio.on('update-games')
+def on_update_games(data=None):
+    join_room('active-games')
+    games = active_games()['active-games']
+    emit('update-games', {'games': games}, room='active-games')
+    
+
+@socketio.on('leave-active-games')
+def on_leave():
+    leave_room('active-games')

@@ -1,7 +1,8 @@
 import Button from "../hooks/Button";
 import './TimePick.css'
 import { addGame } from "../hooks/utils";
-
+import { socket } from "../../pages/MainMenuPage";
+import { useEffect } from "react";
 
 
 
@@ -10,7 +11,9 @@ export default function TimePickupSection ({setNewTab}){
         '5+3','10+2','15+3','30+5',
         '5+5','10+5','15+10','30+30'];
         
-    
+    useEffect(() => {
+        socket.emit('leave-active-games');
+    },[])
     
 
     return(

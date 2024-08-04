@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+..Back_flask/.venv
+..Back_flask/__pycache__
+/Back_flask/app/__pycache__/

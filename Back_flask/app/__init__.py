@@ -8,6 +8,7 @@ from .utils import add_game_to_file, active_games
 from config import Config
 import eventlet
 
+
 app = Flask(__name__)
 
 app.config.from_object(Config)
@@ -15,6 +16,7 @@ CORS(app)
 
 socketio = SocketIO(app, async_mode='eventlet', cors_allowed_origins="*" )
 from app import routes
+from app import api
 
 if '__name__' == '__main__':
     socketio.run(app, debug=True)
