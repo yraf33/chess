@@ -6,10 +6,11 @@ def add_game():
     request_data = request.get_json()
     
     add_game_to_file(request_data)
+    
     return jsonify({"message": "Game added successfully"})
 
 
-# @app.route('/games', methods=['GET'])
-def get_active_games():
+# # @app.route('/games', methods=['GET'])
+# def get_active_games():
     
-    return jsonify(active_games())
+#     return jsonify(active_games())

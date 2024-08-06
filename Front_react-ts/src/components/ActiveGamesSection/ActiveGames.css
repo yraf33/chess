@@ -1,19 +1,19 @@
 #active-games-menu{
-    height: 35vh ;
+    display: flex;
+    flex-direction: column;
     width: 100%; 
-
     background: var(--background-haky-color);
-    
     grid-gap: 5px;
+    overflow: auto;
     /* padding:  10px 10px 10px; */
   }
-  
+ 
  
   .game-list{
     background: var(--background-elem-color);;
     display: flex;
     font-size: 20px;
-    color: #ddd;
+    color: var(--text-color);
     align-items: center;
     justify-content: center;
     border: var(--border-color) solid 2px;

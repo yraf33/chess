@@ -5,7 +5,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 64px;
     user-select: none;
     margin-bottom: 25px;
 }
@@ -31,7 +31,7 @@ nav {
     margin-right: 20px;
 }
 nav a {
-    color: white;
+    color: var(--text-color);
     margin: 0 15px;
     text-decoration: none;
 }

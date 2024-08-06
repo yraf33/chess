@@ -25,7 +25,7 @@ export async function addGame(gameTiming, {setNewTab}, color ) {
         });
         
     if (response.ok) {
-        socket.emit('update-games')
+        socket.emit('update-games', userId)
         setNewTab('active-games');
         
         }

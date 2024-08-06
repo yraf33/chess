@@ -4,7 +4,7 @@ from flask import Flask, render_template, jsonify, \
                     Response
 from flask_cors import CORS
 from flask_socketio import SocketIO, join_room, leave_room, send, emit
-from .utils import add_game_to_file, active_games
+from .utils import add_game_to_file, active_games, get_game_data
 from config import Config
 import eventlet
 

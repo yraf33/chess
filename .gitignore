@@ -1,3 +1,8 @@
+Back_flask/__pycache__
+**/app/__pycache__
+Back_flask/app/__pycache__
+Back_flask/app/__pycache__/__init__.cpython-312.pyc
+
 # Logs
 logs
 *.log
@@ -22,7 +27,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-Back_flask/__pycache__
-**/app/__pycache__
-Back_flask/app/__pycache__
-Back_flask/app/__pycache__/__init__.cpython-312.pyc
+

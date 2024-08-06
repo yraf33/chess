@@ -41,7 +41,11 @@ export default function GamePage() {
     return (
         
         <div className="app">
-        <Timer restart={restart} currentPlayer={currentPlayer} gameTime={state.gameTime} timeForMove={state.timeForMove} />
+        <Timer restart={restart} 
+            currentPlayer={currentPlayer} 
+            gameTime={state.gameTime} 
+            timeForMove={state.timeForMove} 
+        />
         <BoardComponent 
         board={board} 
         setBoard={setBoard}

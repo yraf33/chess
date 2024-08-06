@@ -6,4 +6,4 @@ import './css/styles.css';
 
 
 
-ReactDOM.createRoot(document.getElementById('root')).render( <App />)
+ReactDOM.createRoot(document.body).render( <App />)

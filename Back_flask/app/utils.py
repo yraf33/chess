@@ -29,4 +29,9 @@ def copy_game_check(game_data: dict) -> dict:
     return data
 
 
+def get_game_data(active_games, userId):
+    for game in active_games:
+        if game['userId'] == userId:
+            return game['gameId']
+    
 
