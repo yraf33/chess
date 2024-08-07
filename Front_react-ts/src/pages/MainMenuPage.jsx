@@ -5,13 +5,13 @@ import { useState } from "react"
 import AsideMenu from "../components/AsideMenu/AsideMenu"
 import PlayerStatComponent from "../components/PlayerStatComponent/PlayerStatComponent"
 import ChatSection from "../components/ChatSection/ChatSection"
-import io from 'socket.io-client';
 
-export const socket = io('ws://127.0.0.1:5000');
+
+
 
 export default function MainMenuPage () {
     const [tab, setTab] = useState('main')
-
+    
  return (
     <>
     <main>

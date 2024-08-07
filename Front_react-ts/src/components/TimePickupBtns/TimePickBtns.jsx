@@ -1,7 +1,7 @@
 import Button from "../hooks/Button";
 import './TimePick.css'
 import { addGame } from "../hooks/utils";
-import { socket } from "../../pages/MainMenuPage";
+import { socket } from "../../App";
 import { useEffect } from "react";
 
 

@@ -11,9 +11,12 @@ import { useLocation } from 'react-router-dom';
 
 
 export default function GamePage() {
+    const {state} = useLocation();
+    
+    console.log(state)
     const [board, setBoard] = useState(new Board())
-    const whitePlayer =  new Player(Colors.WHITE)
-    const blackPlayer = new Player(Colors.BLACK)
+    const whitePlayer = new Player(Colors.WHITE, state.userId);
+    const blackPlayer = new Player(Colors.BLACK, state.userId);
     
     const [currentPlayer, setCurrentPlayer] = useState<Player | null>(null);
     
@@ -34,9 +37,7 @@ export default function GamePage() {
         newBoard.addFigures()
         setBoard(newBoard);
     }
-    const {state} = useLocation();
-    
-    console.log(state)
+
 
     return (
         
