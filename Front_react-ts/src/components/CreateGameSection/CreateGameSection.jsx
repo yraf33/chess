@@ -2,8 +2,8 @@ import { useState } from "react";
 import './CreateGameSection.css';
 import { timeOnGame } from "../../data";
 import { timeOnMove } from "../../data";
-import  Button  from "../hooks/Button";
-import { addGame } from "../hooks/utils";
+import  Button  from "../../hooks/Button";
+import { addGame } from "../../hooks/utils";
 
 
 

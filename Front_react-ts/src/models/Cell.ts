@@ -38,7 +38,7 @@ export class Cell {
   setFigure (figure: Figure) {
     this.figure = figure;
     figure.cell = this;
-    if (this.figure.name === 'Пешка') {
+    if (this.figure.name === 'P') {
       this.figure.changeFigure(this.figure.cell);
     }
   }
@@ -50,6 +50,7 @@ export class Cell {
   }
 
   moveFigure(target: Cell) {
+    console.log(target)
     if(this.figure && this.figure?.canMove(target)) {
       this.figure.moveFigure(target);
       // console.log(this.board.cells)

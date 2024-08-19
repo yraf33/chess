@@ -1,5 +1,5 @@
 import getOrCreateUserId from "./uid";
-import { socket } from "../../App";
+import { menuSocket } from "../services/socketService";
 // import { userId } from "../../pages/MainMenuPage";
 
 
@@ -9,19 +9,26 @@ export async function addGame(gameTiming, {setNewTab}, color ) {
     const timeForMove = gameTiming[1]
     console.log(gameTiming, gameTime, timeForMove)
     const finalColor = color || 'random';
-    socket.emit('create-game', 
+    menuSocket.emit('create-game', 
         {
             gameTime: gameTime,
             timeForMove: timeForMove,
             color: finalColor,
-            // userId: userId
+            userId: getCookie('userId')
         }, 
         (response) => {
             console.log('Game created:', response);
-            // socket.emit('update-games');
+            menuSocket.emit('update-games');
             setNewTab('active-games');
         }
     );
+}
+
+export function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) 
+        return parts.pop().split(';').shift();
 }
     // const response =  await fetch('http://127.0.0.1:5000/add_game', {
     //     method: 'POST',

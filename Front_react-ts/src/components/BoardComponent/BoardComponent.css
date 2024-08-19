@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     border: 1px solid var(--border-color);
     
+    
 }
 .board-wrapper {
     display: grid;

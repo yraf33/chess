@@ -1,6 +1,6 @@
 
 
-import Button from "../hooks/Button"
+import Button from "../../hooks/Button"
 import { useState } from "react";
 import CreateGameSection from "../CreateGameSection/CreateGameSection";
 import Modal from "../Modal/Modal";

@@ -1,5 +1,5 @@
 import  { FC, useEffect, useRef, useState } from "react";
-import { Player } from "../../models/Player";
+import { Player } from "../../models/Player.ts";
 import { Colors } from "../../models/Colors";
 
 

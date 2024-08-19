@@ -4,20 +4,14 @@ from flask import Flask, render_template, jsonify, \
                     Response
 from flask_cors import CORS
 from flask_socketio import SocketIO,  join_room, leave_room, send, emit, rooms
+from .game import *
 from .utils import *
 from config import Config
+from .const_data import *
+from pprint import pprint
 import eventlet
+from .app_init import *
+from .socket.lobby import *
 
 
-app = Flask(__name__)
-
-app.config.from_object(Config)
-CORS(app)
-
-socketio = SocketIO(app, async_mode='eventlet', cors_allowed_origins="*" )
-from app import routes
-from app import api
-
-if '__name__' == '__main__':
-    socketio.run(app, debug=True)
 
